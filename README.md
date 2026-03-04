@@ -54,31 +54,7 @@ I --> J[Streamlit Web Application]
 
 ---
 
-## Cloud Architecture
 
-The project uses a layered cloud architecture built on Google Cloud Platform to support scalable data processing, machine learning, and deployment.
-
-```mermaid
-flowchart TD
-
-A[Healthcare Dataset<br>Kaggle] --> B[Google Cloud Storage<br>Bronze Layer]
-
-B --> C[Dataproc Cluster<br>PySpark ETL]
-
-C --> D[BigQuery Silver Dataset<br>Processed Data]
-
-D --> E[BigQuery ML<br>Feature Selection]
-
-E --> F[Vertex AI Notebook<br>Model Training]
-
-F --> G[BigQuery Gold Dataset<br>Predictions]
-
-G --> H[Power BI Dashboard]
-
-F --> I[Cloud Run API<br>Prediction Service]
-
-I --> J[Streamlit Web Application]
-```
 ---
 
 ## Data Architecture
