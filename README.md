@@ -295,19 +295,14 @@ heart-disease-cloud-ml-pipeline/
 README.md
 requirements.txt
 
-architecture/
-    system_architecture.png
-    pipeline_flow.png
-
 dataproc/
     dataproc_heart_analysis.py
 
 bigquery/
     feature_selection.sql
-    model_training.sql
 
 vertex_ai/
-    heart_model_training.ipynb
+    heart_model_training.py
 
 deployment/
 
@@ -323,26 +318,10 @@ deployment/
 visualization/
     powerbi_dashboard_notes.md
 
-docs/
-    project_report.pdf
+
 ```
 
 ---
-
-## Running the Pipeline
-
-Example workflow:
-- run preprocessing
-python src/datapipeline/dataproc_preprocessing.py
-
-- train model
-python src/modeling/train_model.py
-
-- generate predictions
-python src/modeling/evaluate_model.py
-
----
-
 
 ## Project Purpose
 
